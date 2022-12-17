@@ -1,8 +1,15 @@
-n=int(input())
-for i in range(0,n):
-    a,b=map(int,input().split())
-    diff=0
-    if(b>a):
-        diff=b-a
-    print(diff)
-
+n = input()
+n = int(n)
+copy_n=n
+result = 0
+ 
+while(n!=0):
+    digit = n%10
+    result = result*10 + digit
+    n=int(n/10)
+ 
+print("Result is: ", result)
+if(result==copy_n):
+    print("Palindrome!")
+else:
+    print("Not a Palindrome!")
