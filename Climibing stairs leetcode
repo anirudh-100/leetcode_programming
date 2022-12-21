@@ -1,4 +1,5 @@
 class Solution:
+
   def climbStairs(self, n: int) -> int:
     # dp[i] := # of distinct ways to climb to i-th stair
     dp = [1, 1] + [0] * (n - 1)
